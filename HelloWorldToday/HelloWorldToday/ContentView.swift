@@ -1,16 +1,29 @@
-//
-//  ContentView.swift
-//  HelloWorldToday
-//
-//  Created by Todd Fleeman on 1/6/20.
-//  Copyright © 2020 Todd Fleeman. All rights reserved.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        HStack() {
+            VStack(alignment: .leading) {
+                Text("Todd Fleeman")
+                    .font(.title)
+                    .foregroundColor(.gray)
+                Text("http://www/rtodd.net")
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+                HStack() {
+                    Image(systemName: "t.square.fill")
+                        .foregroundColor(.purple)
+                    
+                    Text("@rtoddf")
+                        .font(.subheadline)
+                        .foregroundColor(.purple)
+                    .bold()
+                    .italic()
+                }
+            }
+        }
+//            .frame(width: 300, height: 240)
+//            .background(Color.gray)
     }
 }
 
