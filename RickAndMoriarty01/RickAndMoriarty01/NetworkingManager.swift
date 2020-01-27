@@ -16,7 +16,7 @@ class NetworkingManager:ObservableObject {
                 DispatchQueue.main.async {
                     self.dataList = dataList
                     
-                    print(dataList.results)
+//                    print(dataList.results)
                 }
         }.resume()
     }
